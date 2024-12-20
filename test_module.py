@@ -21,7 +21,7 @@ class LinePlotTestCase(unittest.TestCase):
         actual = self.ax.get_ylabel()
         expected = "Sea Level (inches)"
         self.assertEqual(actual, expected, "Expected line plot ylabel to be 'Sea Level (inches)'")
-        actual = self.ax.get_xticks().tolist()
+        actual = self.ax.get_xticks()
         expected = [1850.0, 1875.0, 1900.0, 1925.0, 1950.0, 1975.0, 2000.0, 2025.0, 2050.0, 2075.0]
         self.assertEqual(actual, expected, "Expected x tick labels to be '1850.0, 1875.0, 1900.0, 1925.0, 1950.0, 1975.0, 2000.0, 2025.0, 2050.0, 2075.0'")
 
